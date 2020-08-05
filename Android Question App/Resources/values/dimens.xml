@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+	<dimen name="layout_margin">30dp</dimen>
+
+	<dimen name="text_size_small">4dp</dimen>
+	<dimen name="text_size_medium">8dp</dimen>
+	<dimen name="text_size_large">16dp</dimen>
+	<dimen name="text_size_extra_large">24dp</dimen>	
+
+</resources>

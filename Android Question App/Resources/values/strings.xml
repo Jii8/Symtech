@@ -1,0 +1,25 @@
+<resources>
+  <string name="app_name">Android Question App</string>
+
+	<!-- UI Controllers Text-->
+	<string name="search_Title">Search for a subreddit</string>
+	<string name="search_button_text">Search</string>
+
+	<string name="mimeType_html">text/html</string>
+	<string name="encoding_utf_8">utf-8</string>
+
+	<!-- Subreddit URL & JSON Keys-->
+	<string name="reddit_url">http://www.reddit.com/</string>
+	<string name="subreddit_url">http://www.reddit.com/subreddits/search.json?q=</string>
+	<string name="subreddit_sidebar_path">/about/sidebar</string>
+
+	<string name="subreddit_data">data</string>
+	<string name="subreddit_data_children">children</string>
+	<string name="subreddit_data_display_name_pref">display_name_prefixed</string>
+
+	<!--Error Messages-->
+	<string name="errorMsg_emptyInput">Please key in the {0}</string>
+		
+	<string name="errorMsg_systemError_generic">Something went wrong, please try again or contact support</string>
+
+</resources>
