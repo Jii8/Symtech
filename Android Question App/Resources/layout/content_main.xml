@@ -1,52 +1,48 @@
 
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/search_Title"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_size_extra_large">
-        </TextView>
+        android:text="@string/search_Title"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_extra_large">
+    </TextView>
 
-        <EditText
-            android:id="@+id/search_textInput"
-            android:inputType="text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin"
-            android:textSize="@dimen/text_size_large"
-            android:hint="@string/search_button_text">
-        </EditText>
-        <include
-            layout="@layout/progress_bar" />
-        <Button
-            android:id="@id/search_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin"
-            android:layout_below="@+id/search_textInput"
-            android:text="@string/search_button_text">
-        </Button>
+    <EditText
+        android:id="@+id/search_textInput"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:textSize="@dimen/text_size_large"
+        android:hint="@string/search_button_text">
+    </EditText>
+    <include
+        layout="@layout/progress_bar" />
+    <Button
+        android:id="@id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_below="@+id/search_textInput"
+        android:text="@string/search_button_text">
+    </Button>
 
-        <ListView
-            android:id="@+id/subreddit_listView"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
+    <ListView
+        android:id="@+id/subreddit_listView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
             >
-        </ListView>
+    </ListView>
 
-    </LinearLayout>
+</LinearLayout>
 
-</RelativeLayout>
